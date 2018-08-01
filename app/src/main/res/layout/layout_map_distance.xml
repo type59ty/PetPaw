@@ -1,0 +1,80 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/white_grey_border_bottom">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@color/green"
+            android:text="START"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:id="@+id/startBtn"
+            android:visibility="visible"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@color/orange"
+            android:text="PAUSE"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:id="@+id/stoptBtn"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:background="@color/green"
+            android:layout_alignParentRight="true"
+            android:text="RESUME"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:id="@+id/resumeBtn"
+            android:visibility="invisible"/>
+        <Button
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:background="@color/red"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:text="FINISH"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:id="@+id/finishBtn"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="40dp"
+            android:layout_marginLeft="240dp"
+            android:id="@+id/text_distance"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="40dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/timer"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                時間                        距離(km)"
+            android:textSize="20dp"
+            android:layout_below="@+id/text_distance"/>
+
+
+
+    </RelativeLayout>
+
+</merge>

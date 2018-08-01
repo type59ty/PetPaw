@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/petinfo"
+        android:enabled="true"
+        android:icon="@mipmap/ic_account_box_black_36dp"
+        android:title="@string/petinfo" />
+    <item
+        android:id="@+id/walking"
+        android:enabled="true"
+        android:icon="@mipmap/ic_pets_black_36dp"
+        android:title="@string/walking" />
+    <item
+        android:id="@+id/viewPage"
+        android:enabled="true"
+        android:icon="@mipmap/ic_insert_chart_black_36dp"
+        android:title="@string/analysis" />
+    <item
+        android:id="@+id/award"
+        android:enabled="true"
+        android:icon="@mipmap/ic_beenhere_black_36dp"
+        android:title="@string/award" />
+
+</menu>

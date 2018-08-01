@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Top tool Bar-->
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_top_tabs"></include>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/analysisTop"
+                android:fontFamily="serif"
+                android:text="運動分析"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <!--Middle section(body)-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativelayout2">
+            <lecho.lib.hellocharts.view.hack.HackyViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                tools:context="apple.chen.petpaw.ViewPagerChartsActivity"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <!--bottom navigation-->
+        <include layout="@layout/layout_bottom_navigation_view"></include>
+
+    </RelativeLayout>
+
+</RelativeLayout>

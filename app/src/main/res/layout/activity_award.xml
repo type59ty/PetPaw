@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apple.chen.petpaw.Award">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Top tool Bar-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout1">
+            <include layout="@layout/layout_top_tabs"></include>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="serif"
+                android:text="運動成就"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <!--Middle section(body)-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativelayout2"
+            android:layout_below="@id/relativelayout1">
+            <include layout="@layout/layout_center_viewpager"></include>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@drawable/award_group" />
+
+        </RelativeLayout>
+
+        <!--bottom navigation-->
+        <include layout="@layout/layout_bottom_navigation_view"></include>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

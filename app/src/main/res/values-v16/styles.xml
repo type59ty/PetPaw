@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LabelStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:label">運動分析</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

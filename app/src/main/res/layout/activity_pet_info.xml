@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apple.chen.petpaw.PetInfo">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--Top-->
+        <include layout="@layout/layout_top_tabs"></include>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="serif"
+            android:text="狗狗資訊"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="640dp"
+            android:id="@+id/background"
+            app:srcCompat="@drawable/background"
+            android:layout_marginTop="50dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/longbar"
+            android:layout_marginTop="295dp"
+            android:layout_marginLeft="25dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/longbar"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="25dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/highbar"
+            android:layout_marginTop="163dp"
+            android:layout_marginLeft="25dp"/>
+
+
+
+        <!--//////////   Basic information   /////////////-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"
+            android:layout_marginBottom="180dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_petName"
+            android:textColor="@color/black"
+            android:text="-"
+            android:layout_marginTop="160dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_email"
+            android:text="-"
+            android:layout_marginTop="187dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_petWeight"
+            android:text="-"
+            android:layout_marginTop="203dp"
+            android:layout_marginLeft="217dp"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_petAge"
+            android:text="-"
+            android:layout_marginTop="203dp"
+            android:layout_marginLeft="137dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年齡"
+            android:textSize="18sp"
+            android:layout_marginTop="223dp"
+            android:layout_marginLeft="130dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="體重(kg)"
+            android:textSize="18sp"
+            android:layout_marginTop="223dp"
+            android:layout_marginLeft="210dp"/>
+
+        <!--//////////   Today's grade   /////////////-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_today_black_48dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日成績"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="45dp"/>
+
+        <!--//////////   label field   /////////////-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次數"
+            android:textSize="18sp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距離"
+            android:textSize="18sp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="130dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="時間"
+            android:textSize="18sp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="速率"
+            android:textSize="18sp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="270dp"/>
+
+        <!--//////////   data field   /////////////-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="307dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/text_today_count"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="307dp"
+            android:layout_marginLeft="136dp"
+            android:id="@+id/text_today_distance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="307dp"
+            android:layout_marginLeft="202dp"
+            android:id="@+id/text_today_times"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="307dp"
+            android:layout_marginLeft="277dp"
+            android:id="@+id/text_today_speed"/>
+
+        <!--//////////   Total grade   /////////////-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_trending_up_black_48dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累積成績"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="50dp"/>
+
+        <!--//////////   label field   /////////////-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次數"
+            android:textSize="18sp"
+            android:layout_marginTop="470dp"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距離"
+            android:textSize="18sp"
+            android:layout_marginTop="470dp"
+            android:layout_marginLeft="130dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="時間"
+            android:textSize="18sp"
+            android:layout_marginTop="470dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="速率"
+            android:textSize="18sp"
+            android:layout_marginTop="470dp"
+            android:layout_marginLeft="270dp"/>
+
+        <!--//////////   data field   /////////////-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="437dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/text_total_count"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="437dp"
+            android:layout_marginLeft="136dp"
+            android:id="@+id/text_total_distance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="437dp"
+            android:layout_marginLeft="202dp"
+            android:id="@+id/text_total_times"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="437dp"
+            android:layout_marginLeft="277dp"
+            android:id="@+id/text_total_speed"/>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--bottom navigation-->
+        <include layout="@layout/layout_bottom_navigation_view">
+        </include>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

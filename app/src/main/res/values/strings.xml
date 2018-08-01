@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PetPawRunMap</string>
+    <string name="map_api_key">AIzaSyDAm_dcvgYnnKSok6gzhU62aa-GyeYtacI</string>
+    <string name="petinfo">個人資料</string>
+    <string name="walking">散步模式</string>
+    <string name="analysis">運動分析</string>
+    <string name="award">運動成就</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Login -->
+    <string name="signup">註冊</string>
+    <string name="account">帳號</string>
+    <string name="password">密碼</string>
+    <string name="login">登入</string>
+    <string name="plz_input_accout">請輸入帳號</string>
+    <string name="plz_input_pw">請輸入密碼</string>
+    <string name="register_success">註冊成功</string>
+    <string name="logout">登出</string>
+    <string name="login_success">登入成功</string>
+
+    <!--Facebook Login-->
+    <string name="facebook_app_id">152563618676789</string>
+    <string name="fb_login_protocol_scheme">fb152563618676789</string>
+
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="unknown_service">Unknown Service</string>
+    <string name="unknown_characteristic">Unknown Characterstic</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="StartScan">Start Scan</string>
+    <string name="StopScan">Stop Scan</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
